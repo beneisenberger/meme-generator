@@ -1,0 +1,29 @@
+<div class="container">
+
+    <h1>Meme Generator</h1>
+
+    <h3>Select Your Template Image</h3>
+    <div class="inline" *ngFor="let image of images">
+        <img class="template" src="./{{image}}" (click)="select(image)">
+    </div>
+    <button (click)="getImages()">View All</button>
+
+    <h3>Or Upload Your Own:</h3>
+    <!-- upload prompt goes here -->
+
+    <h3>Add Text:</h3>
+    <p>Top Text:</p>
+    <input type="text" [(ngModel)]="top">
+    <p>Bottom Text:</p>
+    <input type="text" [(ngModel)]="bottom">
+
+    <h2>Your Meme:</h2>
+
+    <div class="meme-container">
+        <img src="{{selected}}" class="selected-image">
+        <div class="top-text">{{top}}</div>
+        <div class="bottom-text">{{bottom}}</div>
+    </div>
+    <!-- display component goes here -->
+
+</div>

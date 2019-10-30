@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+}
+
+.template {
+    height: 100px;
+}
+
+.inline {
+    display: inline;
+}
+
+.selected-image {
+    width: 100%;
+}
+
+.meme-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 50%;
+}
+
+.top-text {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
